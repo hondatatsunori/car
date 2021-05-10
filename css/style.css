@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/* リセットcss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+/*------------------------*/
+/*　　　　共通スタイル　　　*/
+/*------------------------*/
+p {
+    color: #333;
+    font-style: Roboto;
+}
+
+.common-btn-long {
+    height: 65px;
+    line-height: 65px;
+    width: 300px;
+    background-color: #FF4545;
+    border-radius: 15px;
+}
+
+.common-btn-long p {
+    text-align: center;
+    font-size: 24px;
+    font-family: bold;
+    color: #fff;
+}
+
+.common-btn-short {
+    height: 60px;
+    line-height: 60px;
+    width: 200px;
+    background-color: #ff4545;
+    border-radius: 15px;
+}
+
+.common-btn-short p {
+    text-align: center;
+    font-size: 20px;
+    font-family: bold;
+    color: #fff;
+}
+
+/*------------------------*/
+/*　　　　　ヘッダー　　　　*/
+/*------------------------*/
+.header-info {
+    background-color: #000;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-info-catch {
+    font-size: 17px;
+    margin-left: 8%;
+    color: #fff;
+}
+
+.header-info-address {
+    font-size: 12px;
+    margin-right: 8%;
+    color: #fff;
+}
+
+.header-contact {
+    height: 100px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 280px;
+    height: 50px;
+    margin-left: 8%;
+}
+
+.header-tel {
+    margin-left: 25rem;
+}
+
+.header-tel p {
+    font-size: 14px;
+}
+
+.header-tel-number {
+    font-size: 30px;
+}
+
+.header-tel-btn {
+    margin-right: 8%;
+}
+
+/*------------------------*/
+/*　　　ファーストビュー　　*/
+/*------------------------*/
+.first-view-wrap {
+    margin: 70px 0 80px 255px;
+}
+
