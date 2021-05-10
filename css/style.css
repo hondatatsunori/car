@@ -101,7 +101,7 @@ input, select {
 /*------------------------*/
 /*　　　　共通スタイル　　　*/
 /*------------------------*/
-h1,h2,h3,p {
+html,body {
     color: #333;
     font-style: Roboto;
 }
@@ -173,12 +173,14 @@ h1,h2,h3,p {
     margin-left: 8%;
 }
 
-#header-tel {
+.header-tel {
     margin-left: 25rem;
+    text-align: right;
 }
 
-#header-tel p {
+.header-tel p {
     font-size: 14px;
+    line-height: 1.4;
 }
 
 #header-tel-number {
@@ -196,7 +198,65 @@ h1,h2,h3,p {
     margin: 70px 0 80px 255px;
 }
 
+.first-view-catch {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
 .first-view-document {
     font-size: 16px;
-    line-height: 2;
+    line-height: 1.4;
+}
+
+.first-view-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 225px;
+    margin: 20px 0 70px;
+}
+
+.first-view-content-short {
+    height: 20px;
+    line-height: 20px;
+    width: 75px;
+    background-color: #c4c4c4;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 30px;
+}
+
+.first-view-content-long {
+    height: 20px;
+    line-height: 20px;
+    width: 140px;
+    background-color: #c4c4c4;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 30px;
+}
+
+.first-view-content-short p {
+    font-size: 11px;
+}
+
+.first-view-content-long p {
+    font-size: 11px;
+}
+
+/*------------------------*/
+/*　　　　　ニュース　　　　*/
+/*------------------------*/
+.news-title {
+    height: 65px;
+    line-height: 65px;
+    width: 250px;
+    background-color: #FF4545;
+}
+
+.news-title h2 {
+    font-size: 25px;
+    color: #fff;
 }
