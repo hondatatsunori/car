@@ -101,7 +101,7 @@ input, select {
 /*------------------------*/
 /*　　　　共通スタイル　　　*/
 /*------------------------*/
-p {
+h1,h2,h3,p {
     color: #333;
     font-style: Roboto;
 }
@@ -173,15 +173,15 @@ p {
     margin-left: 8%;
 }
 
-.header-tel {
+#header-tel {
     margin-left: 25rem;
 }
 
-.header-tel p {
+#header-tel p {
     font-size: 14px;
 }
 
-.header-tel-number {
+#header-tel-number {
     font-size: 30px;
 }
 
@@ -196,3 +196,7 @@ p {
     margin: 70px 0 80px 255px;
 }
 
+.first-view-document {
+    font-size: 16px;
+    line-height: 2;
+}
