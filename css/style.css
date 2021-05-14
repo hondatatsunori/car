@@ -103,37 +103,37 @@ input, select {
 /*------------------------*/
 html,body {
     color: #333;
-    font-style: Roboto;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 
-.common-btn-long {
-    height: 65px;
-    line-height: 65px;
-    width: 300px;
-    background-color: #FF4545;
-    border-radius: 15px;
-}
-
-.common-btn-long p {
-    text-align: center;
-    font-size: 24px;
-    font-family: bold;
-    color: #fff;
-}
-
-.common-btn-short {
-    height: 60px;
-    line-height: 60px;
+.common-btn {
+    display: inline-block;
     width: 200px;
-    background-color: #ff4545;
+    max-width: 100%;
+    padding: 20px 10px;
+    background-color: #FF4545;
+    border: 2px solid transparent;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition:  .25s;
     border-radius: 15px;
 }
 
-.common-btn-short p {
-    text-align: center;
-    font-size: 20px;
-    font-family: bold;
-    color: #fff;
+.common-btn:focus,
+.common-btn:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color: #ff4545
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 /*------------------------*/
@@ -148,13 +148,13 @@ html,body {
 }
 
 .header-info-catch {
-    font-size: 17px;
+    font-size: 1.4rem;
     margin-left: 8%;
     color: #fff;
 }
 
 .header-info-address {
-    font-size: 12px;
+    font-size: 1.2rem;
     margin-right: 8%;
     color: #fff;
 }
@@ -174,17 +174,17 @@ html,body {
 }
 
 .header-tel {
-    margin-left: 25rem;
     text-align: right;
+    margin: 0 30px 0 auto;
 }
 
 .header-tel p {
-    font-size: 14px;
+    font-size: 1.2rem;
     line-height: 1.4;
 }
 
 #header-tel-number {
-    font-size: 30px;
+    font-size: 2.8rem;
 }
 
 .header-tel-btn {
@@ -199,13 +199,13 @@ html,body {
 }
 
 .first-view-catch {
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 1.4;
     margin-bottom: 20px;
 }
 
 .first-view-document {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.4;
 }
 
@@ -246,17 +246,153 @@ html,body {
     font-size: 11px;
 }
 
+.btn-short-easy {
+
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    
+}
+
 /*------------------------*/
 /*　　　　　ニュース　　　　*/
 /*------------------------*/
-.news-title {
-    height: 65px;
-    line-height: 65px;
-    width: 250px;
-    background-color: #FF4545;
+.news {
+    padding: 0 40px 40px;
+    border: 3px solid #ff4545;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    max-width: 760px;
+    margin: 40px auto;
+    line-height: 1.5;
 }
 
-.news-title h2 {
-    font-size: 25px;
+.news-heading {
+    font-size: 16px;
+    display: block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    background: #ff4545;
     color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.news-ttl {
+    font-size: 24px;
+    color: #ff4545;
+    margin: 40px 0 25px;
+}
+
+.news-txt {
+    text-align: left;
+    font-size: 16px
+}
+
+/*------------------------*/
+/*　　　　　 特徴 　　　　　*/
+/*------------------------*/
+.feature {
+    margin: 30px auto;
+    max-width: 1210px;
+}
+
+.feature-ttl {
+    font-size: 2.4rem;
+    background-color: #F5F5F5;
+    padding: 20px 0;
+    border-top: 5px solid #FF4545;
+    text-align: center;
+}
+
+.feature-item {
+    display: flex;
+    max-height: 200px;
+    margin-top: 30px;
+}
+
+.feature-item-img img {
+    width: 350px;
+    height: 200px;
+}
+
+.feature-item-right img {
+    /* float: right; */
+}
+
+.feature-item-detail {
+    padding: 10px 30px;
+    font-size: 1.4rem;
+}
+
+.feature-item-ttl {
+    font-size: 2.0rem;
+    color: #FF4545;
+    display: inline-block;
+    border-bottom: 1px solid #333 ;
+}
+
+.feature-item-question {
+    margin: 18px 0;
+    line-height: 1.5;
+}
+
+
+/*------------------------*/
+/*　　　　お店の写真  　　　*/
+/*------------------------*/
+.shop-picture {
+    display: flex;
+}
+
+.shop-picture img {
+    width: 380px;
+    height: 275px;
+}
+
+/*------------------------*/
+/*　　　　 代表挨拶 　　　　*/
+/*------------------------*/
+.greeting {
+    margin: 30px 0;
+    background: url(../img/factory.jpg) no-repeat;
+    background-color: hsl(0, 0%, 96%);
+    height: 400px;
+    position: relative;
+}
+
+.greeting-left {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+}
+
+.greeting-ttl {
+    font-size: 2.0rem;
+}
+
+.greeting-txt {
+    font-size: 2.0rem;
+}
+
+.greeting-right {
+    font-size: 1.6rem;
+    width: 650px;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+
+/*------------------------*/
+/*    大切にしていること   */
+/*------------------------*/
+.important-ttl {
+    font-size: 2.4rem;
 }
