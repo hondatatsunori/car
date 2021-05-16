@@ -645,7 +645,13 @@ span {
         padding-top: 20%;
         padding-left: 5%;
     }
-}
+
+    .feature-item-img {
+        display: flex;
+        align-items: center;
+    }
+    }
+    
 
 @media screen and (max-width:768px) {
     /* 共通 */
@@ -765,6 +771,10 @@ span {
         color: #333;
         font-weight: bold;
     }
+
+    .feature-item-img {
+        display: block;
+    }
     
     /* スマートフォンで見たときは"feature-sp"のclassがついたものが表示される */
     .feature-pc {
@@ -777,7 +787,10 @@ span {
     /* お店の写真 */
     .shop-picture img {
         width: 50%;
+        height: 300px;
     }
+
+
     
     /* 代表挨拶 */
     .greeting-right {
