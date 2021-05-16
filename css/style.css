@@ -136,6 +136,28 @@ img {
     height: auto;
 }
 
+.common-ttl {
+    font-size: 2.4rem;
+    background-color: #F5F5F5;
+    padding: 20px 0;
+    border-top: 5px solid #FF4545;
+    text-align: center;
+}
+
+.ptb-m {
+    padding: 60px 0;
+}
+
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1210px;
+}
+
+span {
+    color: #ff4545;
+}
+
 /*------------------------*/
 /*　　　　　ヘッダー　　　　*/
 /*------------------------*/
@@ -185,6 +207,19 @@ img {
 
 #header-tel-number {
     font-size: 2.8rem;
+    position: relative;
+}
+
+#header-tel-number::before {
+    position: absolute;
+    top: 9px;
+    left: -24px;
+    width: 23px;
+    height: 23px;
+    content: "";
+    background: url(../img/tel.png) no-repeat;
+    background-size: cover;
+    
 }
 
 .header-tel-btn {
@@ -194,8 +229,23 @@ img {
 /*------------------------*/
 /*　　　ファーストビュー　　*/
 /*------------------------*/
+.first-view {
+    background: url(../img/Firstview.png) no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 80vh;
+    /* position: relative; */
+}
+
 .first-view-wrap {
-    margin: 70px 0 80px 255px;
+    /* position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%); */
+    /* padding-top: 8rem;
+    padding-left: 20rem; */
+    padding-top: 5%;
+    padding-left: 15%;
 }
 
 .first-view-catch {
@@ -246,12 +296,19 @@ img {
     font-size: 11px;
 }
 
-.btn-short-easy {
+.first-view-btn {
+    position: relative;
+}
 
-    height: 30px;
+.first-view-btn::before {
+    position: absolute;
+    top: -15px;
+    left: -15px;
     width: 30px;
-    border-radius: 50%;
-    
+    height: 30px;
+    content: "";
+    background: url(../img/easy.png) no-repeat;
+    background-size: cover;
 }
 
 /*------------------------*/
@@ -264,7 +321,7 @@ img {
     text-align: center;
     position: relative;
     max-width: 760px;
-    margin: 40px auto;
+    margin: 60px auto 0;
     line-height: 1.5;
 }
 
@@ -297,32 +354,14 @@ img {
 /*------------------------*/
 /*　　　　　 特徴 　　　　　*/
 /*------------------------*/
-.feature {
-    margin: 30px auto;
-    max-width: 1210px;
-}
-
-.feature-ttl {
-    font-size: 2.4rem;
-    background-color: #F5F5F5;
-    padding: 20px 0;
-    border-top: 5px solid #FF4545;
-    text-align: center;
-}
-
 .feature-item {
     display: flex;
-    max-height: 200px;
     margin-top: 30px;
 }
 
 .feature-item-img img {
     width: 350px;
     height: 200px;
-}
-
-.feature-item-right img {
-    /* float: right; */
 }
 
 .feature-item-detail {
@@ -334,42 +373,83 @@ img {
     font-size: 2.0rem;
     color: #FF4545;
     display: inline-block;
-    border-bottom: 1px solid #333 ;
+    border-bottom: 1px solid #333;
 }
 
 .feature-item-question {
-    margin: 18px 0;
+    margin: 10px 0;
     line-height: 1.5;
+    position: relative;
 }
 
+.feature-item-question::before {
+    position: absolute;
+    top: 3px;
+    left: -17px;
+    width: 11px;
+    height: 15px;
+    content: "";
+    background: url(../img/Q.png) no-repeat;
+}
+
+.feature-item-answer {
+    position: relative;
+}
+
+.feature-item-answer::before {
+    position: absolute;
+    top: 3px;
+    left: -17px;
+    width: 11px;
+    height: 15px;
+    content: "";
+    background: url(../img/A.png) no-repeat;
+}
+
+.feature-item-service {
+    margin-top: 10px;
+}
+
+
+/* パソコンで見たときは"pc"のclassがついたものが表示される */
+.pc {
+    display: flex;
+}
+
+.sp {
+    display: none;
+}
 
 /*------------------------*/
 /*　　　　お店の写真  　　　*/
 /*------------------------*/
 .shop-picture {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .shop-picture img {
     width: 380px;
-    height: 275px;
+    width: 25%;
+    height: auto;
 }
 
 /*------------------------*/
 /*　　　　 代表挨拶 　　　　*/
 /*------------------------*/
 .greeting {
-    margin: 30px 0;
-    background: url(../img/factory.jpg) no-repeat;
-    background-color: hsl(0, 0%, 96%);
+    margin-top: 30px;
+    background: url(../img/greeting.png) no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 400px;
     position: relative;
 }
 
 .greeting-left {
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 25%;
+    left: 20%;
     transform: translate(-50%,-50%);
 }
 
@@ -383,16 +463,311 @@ img {
 
 .greeting-right {
     font-size: 1.6rem;
-    width: 650px;
     position: absolute;
-    top: 60%;
-    left: 70%;
+    width: 60%;
+    top: 70%;
+    left: 60%;
     transform: translate(-50%,-50%);
 }
 
 /*------------------------*/
 /*    大切にしていること   */
 /*------------------------*/
+
+.important {
+    margin: 0 auto;
+}
+
 .important-ttl {
     font-size: 2.4rem;
+    position: relative;
+    padding: 0 65px;
+    text-align: center;
+}
+
+.important-ttl:before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+    background: #333;
+}
+
+.important-ttl span {
+    position: relative;
+    padding: 0 1em;
+    background: #fff;
+    color: #333;
+}
+
+.important-list {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 0;
+}
+
+.important-item {
+    width: 350px;
+}
+
+.important-item:nth-child(2) {
+    margin: 0 30px;
+}
+
+.important-item-ttl {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #FF4545;
+    padding: 10px;
+}
+
+.important-item-txt {
+    font-size: 1.4rem;
+}
+
+/*------------------------*/
+/*　　　　　 料金 　　　　　*/
+/*------------------------*/
+.fee {
+    padding-top: 0;
+}
+
+.fee-table {
+    border: 1px solid #ddd;
+    margin: 30px auto 10px;
+    font-size: 1.6rem;
+}
+
+.fee-table_inner {
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.fee-table_header-row {
+    background-color: #efefef;
+}
+
+.fee-table_header {
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.fee-table_text {
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.fee-table_header:last-child,
+.fee-table_text:last-child {
+    border-right-width: 0;
+}
+
+.fee-table_body-row:last-child,
+.fee-table_text {
+    border-bottom-width: 0;
+}
+
+.fee-table_text-example span {
+    font-size: 1.0rem;
+    color: #333;
+}
+
+.fee-note {
+    font-size: 1.2rem;
+}
+
+.recommend {
+    margin-top: 30px;
+}
+
+.recommend-ttl {
+    font-size: 1.6rem;
+}
+
+.recommend-point {
+    position: relative;
+    padding-left: 4.5em;
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.recommend-point span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 2rem;
+    color: #e3f5d8;
+    background: #FC9925;
+}
+
+.recommend-point span:after {
+    position: absolute;
+    top: calc(50% - 7px);
+    right: -11px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-width: 7px 0 7px 12px;
+    border-style: solid;
+    border-color: transparent transparent transparent #FC9925;
+}
+
+.fee-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width : 480px) {
+    /* 大切にしていること */
+    .important-item:nth-child(2) {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+   /* 共通 */
+   .wrap {
+       width: 90%;
+   }
+
+   .common-ttl {
+       font-size: 1.8rem;
+   }
+
+   span {
+       color: #333;
+       font-weight: bold;
+   }
+
+    /* ヘッダー */
+    .header-info,
+    .header-tel,
+    .header-tel-btn {
+        display: none;
+    }
+
+    /* ファーストビュー */
+    .first-view {
+        background: url(../img/Firstview-mobile.png) no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .first-view-catch {
+        font-size: 2.8rem;
+    }
+
+    .first-view-btn {
+        display: none;
+    }
+
+    .first-view-wrap {
+        padding-top: 50%;
+        padding-left: 5%;
+    }
+    
+    /* ニュース */
+
+    /* 特徴 */
+    .feature-item {
+        flex-wrap: wrap;
+    }
+
+    .feature-item-img img {
+        width: 337.5px;
+    }
+
+    .feature-item {
+        text-align: center;
+        display: block;
+    }
+    
+    .feature-item-ttl {
+        font-size: 1.8rem;
+        border: none;
+    }
+
+    .feature-item-question,
+    .feature-item-answer,
+    .feature-item-service {
+        text-align: left;
+    }
+
+    /* お店の写真 */
+ 
+    .shop-picture img {
+        width: 50%;
+    }
+
+    /* 代表挨拶 */
+    .greeting-left {
+        top: 15%;
+    }
+
+    .greeting-right {
+        font-size: 1.4rem;
+        width: 90%;
+        top: 65%;
+        left: 50%;
+    }
+
+    .greeting-txt {
+        font-size: 1.6rem;
+    }
+    
+    /* 大切にしていること */
+    .important-ttl {
+        font-size: 1.8rem;
+    }
+
+    .important-list {
+        flex-wrap: wrap;
+    }
+
+    .important-item {
+        width: 337.5px;
+        padding-bottom: 30px;
+    }
+
+    .important-item:last-child {
+        padding: 0;
+    }
+
+
+    /* 料金 */
+    .fee-table {
+        border-right-width: 0;
+        overflow-x: auto;
+    }
+
+    .fee-table_inner {
+        width: auto;
+        min-width: 100%;
+    }
+
+    .fee-table_header,
+    .fee-table_text {
+        white-space: nowrap;
+    }
+
+    .fee-table_header:last-child,
+    .fee-table_text:last-child {
+        border-right-width: 1px;
+    }
+
+    /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
 }
