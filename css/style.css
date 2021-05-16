@@ -101,9 +101,19 @@ input, select {
 /*------------------------*/
 /*　　　　共通スタイル　　　*/
 /*------------------------*/
+
+/* パソコンで見たときは"pc"のclassがついたものが表示される */
+.pc {
+    display: flex;
+}
+
+.sp {
+    display: none;
+}
+
 html,body {
     color: #333;
-    font-size: 10px;
+    font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
 }
@@ -131,6 +141,7 @@ html,body {
     color: #ff4545
 }
 
+
 img {
     width: 100%;
     height: auto;
@@ -139,7 +150,7 @@ img {
 .common-ttl {
     font-size: 2.4rem;
     background-color: #F5F5F5;
-    padding: 20px 0;
+    padding: 0.83em 0;
     border-top: 5px solid #FF4545;
     text-align: center;
 }
@@ -234,16 +245,9 @@ span {
     background-position: right;
     background-size: cover;
     height: 80vh;
-    /* position: relative; */
 }
 
 .first-view-wrap {
-    /* position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%,-50%); */
-    /* padding-top: 8rem;
-    padding-left: 20rem; */
     padding-top: 5%;
     padding-left: 15%;
 }
@@ -263,7 +267,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     width: 225px;
-    margin: 20px 0 70px;
+    padding: 20px 0 70px;
 }
 
 .first-view-content-short {
@@ -311,6 +315,10 @@ span {
     background-size: cover;
 }
 
+.common-btn_sp {
+    display: none;
+}
+
 /*------------------------*/
 /*　　　　　ニュース　　　　*/
 /*------------------------*/
@@ -326,7 +334,7 @@ span {
 }
 
 .news-heading {
-    font-size: 16px;
+    font-size: 1.6rem;
     display: block;
     width: 130px;
     height: 40px;
@@ -341,14 +349,14 @@ span {
 }
 
 .news-ttl {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #ff4545;
     margin: 40px 0 25px;
 }
 
 .news-txt {
     text-align: left;
-    font-size: 16px
+    font-size: 1.6rem
 }
 
 /*------------------------*/
@@ -410,15 +418,15 @@ span {
     margin-top: 10px;
 }
 
-
-/* パソコンで見たときは"pc"のclassがついたものが表示される */
-.pc {
+/* パソコンで見たときは"feature-pc"のclassがついたものが表示される */
+.feature-pc {
     display: flex;
 }
 
-.sp {
+.feature-sp {
     display: none;
 }
+
 
 /*------------------------*/
 /*　　　　お店の写真  　　　*/
@@ -480,9 +488,9 @@ span {
 
 .important-ttl {
     font-size: 2.4rem;
-    position: relative;
     padding: 0 65px;
     text-align: center;
+    position: relative;
 }
 
 .important-ttl:before {
@@ -625,101 +633,161 @@ span {
     text-align: center;
 }
 
-@media screen and (max-width : 480px) {
-    /* 大切にしていること */
-    .important-item:nth-child(2) {
-        margin: 0;
+@media screen and (max-width:1024px) {
+    /* ファーストビュー */
+    .first-view {
+        background: url(../img/Firstview-tablet.png) no-repeat;
+        background-size: cover;
+        height: 60vh;
+    }
+    
+    .first-view-wrap {
+        padding-top: 20%;
+        padding-left: 5%;
     }
 }
 
 @media screen and (max-width:768px) {
-   /* 共通 */
-   .wrap {
-       width: 90%;
-   }
+    /* 共通 */
 
-   .common-ttl {
-       font-size: 1.8rem;
-   }
+    /* スマートフォンで見たときは"sp"のclassがついたものが表示される */
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
 
-   span {
-       color: #333;
-       font-weight: bold;
-   }
-
+    .wrap {
+        width: 90%;
+    }
+    
+    .common-ttl {
+        font-size: 1.8rem;
+    }
+    
     /* ヘッダー */
+    .header-logo {
+        width: 140px;
+        height: 25px;
+        margin-left: 5%;
+    }
+    
+    .header-contact {
+        height: 40px;
+    }
+    
+    .header-tel_sp {
+        width: 110px;
+        height: 40px;
+        background: #ff4545;
+        color: #fff;
+    }
+    
+    .first-line {
+        padding-top: 5px;
+        padding-left: 25%;
+    }
+    
+    .second-line {
+        font-size: 1.2rem;
+        padding-left: 30%;
+        position: relative;
+    }
+    
+    .second-line::before {
+        position: absolute;
+        top: 3px;
+        left: 13%;
+        width: 18px;
+        height: 12px;
+        content: "";
+        background: url(../img/tel-sp.png) no-repeat;
+    }
+    
     .header-info,
     .header-tel,
     .header-tel-btn {
         display: none;
     }
 
+    
     /* ファーストビュー */
     .first-view {
-        background: url(../img/Firstview-mobile.png) no-repeat;
-        background-position: top;
+        background: url(../img/Firstview-tablet.png) no-repeat;
         background-size: cover;
-    }
-
-    .first-view-catch {
-        font-size: 2.8rem;
-    }
-
-    .first-view-btn {
-        display: none;
+        height: 60vh;
     }
 
     .first-view-wrap {
-        padding-top: 50%;
+        padding-top: 20%;
         padding-left: 5%;
     }
+
     
     /* ニュース */
-
+    .news {
+        padding: 0 20px 40px;
+        width: 70%;
+    }
+    
     /* 特徴 */
     .feature-item {
         flex-wrap: wrap;
-    }
-
-    .feature-item-img img {
-        width: 337.5px;
-    }
-
-    .feature-item {
         text-align: center;
         display: block;
+    }
+    
+    .feature-item-img img {
+        width: 80%;
+        height: auto;
+    }
+    
+    .feature-item-detail {
+        padding: 10px 5px 10px 20px;
+        margin: auto;
+        box-sizing: border-box;
+        width: 80%;
     }
     
     .feature-item-ttl {
         font-size: 1.8rem;
         border: none;
     }
-
+    
     .feature-item-question,
     .feature-item-answer,
     .feature-item-service {
         text-align: left;
     }
-
+    
+    .feature-item-answer span {
+        color: #333;
+        font-weight: bold;
+    }
+    
+    /* スマートフォンで見たときは"feature-sp"のclassがついたものが表示される */
+    .feature-pc {
+        display: none;
+    }
+    .feature-sp {
+        display: block;
+    }
+    
     /* お店の写真 */
- 
     .shop-picture img {
         width: 50%;
     }
-
+    
     /* 代表挨拶 */
-    .greeting-left {
-        top: 15%;
-    }
-
     .greeting-right {
-        font-size: 1.4rem;
-        width: 90%;
         top: 65%;
-        left: 50%;
+        font-size: 1.4rem;
     }
-
-    .greeting-txt {
+    
+    .greeting-left {
+        position: absolute;
+        top: 20%;
         font-size: 1.6rem;
     }
     
@@ -727,47 +795,161 @@ span {
     .important-ttl {
         font-size: 1.8rem;
     }
-
+    
     .important-list {
         flex-wrap: wrap;
     }
-
+    
     .important-item {
-        width: 337.5px;
+        width: 80%;
         padding-bottom: 30px;
     }
-
+    
     .important-item:last-child {
         padding: 0;
     }
-
-
+    
+    
     /* 料金 */
     .fee-table {
         border-right-width: 0;
         overflow-x: auto;
     }
-
+    
     .fee-table_inner {
         width: auto;
         min-width: 100%;
     }
-
+    
     .fee-table_header,
     .fee-table_text {
         white-space: nowrap;
     }
-
+    
     .fee-table_header:last-child,
     .fee-table_text:last-child {
         border-right-width: 1px;
     }
-
-    /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
-    .pc {
-        display: none;
+    
+    .fee-table {
+        font-size: 1.4rem;
     }
-    .sp {
+    
+    .fee-note {
+        font-size: 1rem;
+    }
+    
+    .recommend-ttl {
+        font-size: 1.4rem;
+    }
+    
+    .recommend-point {
+        font-size: 1.4rem;
+        padding-left: 3.7em;
+    }
+    
+    .recommend-point span {
+        padding: 0 1rem;
+    }
+    
+}
+
+@media screen and (max-width : 480px) {
+    /* 共通 */
+    .common-btn_sp {
+        padding: 20px 5px;
+    }
+    
+    .common-btn_sp a {
+        display: inline-block;
+        width: 100px;
+        max-width: 100%;
+        padding: 5px 5px;
+        background-color: #FF4545;
+        border: 2px solid transparent;
+        color: #fff;
+        font-size: 1.4rem;
+        text-align: center;
+        text-decoration: none;
+        transition:  .25s;
+        border-radius: 15px;
+    }
+    
+    .common-btn_sp:focus,
+    .common-btn_sp:hover {
+        background-color: #fff;
+        border-color: currentColor;
+        color: #ff4545
+    }
+
+    /* ファーストビュー */
+    .first-view {
+        background: url(../img/Firstview-mobile.png) no-repeat;
+        background-position: top;
+        background-size: cover;
+        height: 80vh;
+    }
+    
+    .first-view-catch {
+        font-size: 2.8rem;
+    }
+    
+    .first-view-wrap {
+        padding-top: 65%;
+        padding-left: 3%;
+    }
+    
+    .first-view_sp {
+        display: flex;
+    }
+
+    .common-btn_sp {
         display: block;
     }
-}
+    
+    /* ニュース */
+    .news {
+        width: 90%;
+    }
+
+    .news-ttl {
+        font-size: 2rem;
+    }
+
+    .news-txt {
+        font-size: 1.4rem;
+    }
+
+    /* 特徴 */
+    .feature-item-img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .feature-item-detail {
+        width: 100%;
+    }
+
+    /* 大切にしていること */
+    .important-item:nth-child(2) {
+        margin: 0;
+    }
+        
+    /* 代表挨拶 */
+    .greeting-left {
+        top: 15%;
+    }
+        
+        
+    .greeting-right {
+        font-size: 1.4rem;
+        width: 90%;
+        top: 65%;
+            left: 50%;
+    }
+        
+    .greeting-txt {
+        font-size: 1.6rem;
+    }
+        
+    }
