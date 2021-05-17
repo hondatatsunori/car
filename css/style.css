@@ -454,18 +454,19 @@ span {
     position: relative;
 }
 
-.greeting-left {
+.greeting-ttl {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 20%;
     transform: translate(-50%,-50%);
-}
-
-.greeting-ttl {
     font-size: 2.0rem;
 }
 
 .greeting-txt {
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    transform: translate(-50%,-50%);
     font-size: 2.0rem;
 }
 
@@ -787,20 +788,27 @@ span {
     /* お店の写真 */
     .shop-picture img {
         width: 50%;
-        height: 300px;
     }
-
-
     
     /* 代表挨拶 */
+    .greeting {
+        height: 500px;
+    }
+
     .greeting-right {
         top: 65%;
         font-size: 1.4rem;
     }
     
-    .greeting-left {
+    .greeting-ttl {
         position: absolute;
-        top: 20%;
+        top: 15%;
+        font-size: 1.6rem;
+    }
+    
+    .greeting-txt {
+        position: absolute;
+        top: 25%;
         font-size: 1.6rem;
     }
     
@@ -944,15 +952,32 @@ span {
     }
 
     /* 大切にしていること */
+    .important-ttl:before {
+        height: 0.5px;
+    }
+
     .important-item:nth-child(2) {
         margin: 0;
     }
-        
-    /* 代表挨拶 */
-    .greeting-left {
-        top: 15%;
+
+    .important-item {
+        width: 100%;
     }
         
+    /* 代表挨拶 */
+    .greeting {
+        height: 400px;
+    }
+
+    .greeting-ttl {
+        top: 5%;
+        left: 50%;
+    }
+
+    .greeting-txt {
+        top: 20%;
+        left: 20%;
+    }
         
     .greeting-right {
         font-size: 1.4rem;
@@ -965,4 +990,15 @@ span {
         font-size: 1.6rem;
     }
         
+}
+
+
+@media screen and (max-width: 320px) {
+    .first-view-catch {
+        font-size: 2.4rem;
     }
+
+    .first-view-wrap {
+        padding-top: 35%;
+    }
+}
