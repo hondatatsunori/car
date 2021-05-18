@@ -1,4 +1,14 @@
 @charset "utf-8";
+/*
+Theme Name: car
+Theme URL: テーマのサイトのURL
+Description: テーマの説明
+Author: テーマの作者
+Version: テーマのバージョン
+Tags: テーマの特徴を表すタグ（カンマ区切り/オプション）
+License: テーマのライセンス
+License URI: テーマのライセンスのURL
+*/
 
 /* リセットcss */
 html, body, div, span, object, iframe,
@@ -228,7 +238,7 @@ span {
     width: 23px;
     height: 23px;
     content: "";
-    background: url(../img/tel.png) no-repeat;
+    background: url(./img/tel.png) no-repeat;
     background-size: cover;
     
 }
@@ -241,7 +251,7 @@ span {
 /*　　　ファーストビュー　　*/
 /*------------------------*/
 .first-view {
-    background: url(../img/Firstview.png) no-repeat;
+    background: url(./img/Firstview.png) no-repeat;
     background-position: right;
     background-size: cover;
     height: 80vh;
@@ -311,7 +321,7 @@ span {
     width: 30px;
     height: 30px;
     content: "";
-    background: url(../img/easy.png) no-repeat;
+    background: url(./img/easy.png) no-repeat;
     background-size: cover;
 }
 
@@ -397,7 +407,7 @@ span {
     width: 11px;
     height: 15px;
     content: "";
-    background: url(../img/Q.png) no-repeat;
+    background: url(./img/Q.png) no-repeat;
 }
 
 .feature-item-answer {
@@ -411,7 +421,7 @@ span {
     width: 11px;
     height: 15px;
     content: "";
-    background: url(../img/A.png) no-repeat;
+    background: url(./img/A.png) no-repeat;
 }
 
 .feature-item-service {
@@ -447,7 +457,7 @@ span {
 /*------------------------*/
 .greeting {
     margin-top: 30px;
-    background: url(../img/greeting.png) no-repeat;
+    background: url(./img/greeting.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -634,10 +644,112 @@ span {
     text-align: center;
 }
 
+/*------------------------*/
+/*　　　　  フッター  　　　*/
+/*------------------------*/
+.footer {
+    background: #e5e5e5;
+}
+
+.footer-img {
+    width: 250px;
+    height: auto;
+}
+
+.footer-tenpakuhara {
+    background: #FF4545;
+    font-size: 2rem;
+    color: #fff;
+    width: 340px;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+.footer-cotent {
+    display: flex;
+}
+
+.footer-left-address {
+    font-size: 1.6rem;
+}
+
+.footer-left-address span {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.footer-left-parking {
+    font-size: 1.6rem;
+    margin-top: 5px;
+}
+
+.footer-left-tel {
+    font-size: 2.5rem;
+    margin-top: 5px;
+}
+
+.footer-left-time {
+    font-size: 1.8rem;
+}
+
+.footer-left {
+    margin-right: 10%;
+    font-size: 1.2rem;
+}
+
+.footer-hara-ttl {
+    font-size: 1.6rem;
+}
+
+.footer-hara-address {
+    font-size: 1.4rem;
+}
+
+.footer-hara-address span {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.footer-hara-time {
+    font-size: 1.4rem;
+}
+
+.footer-nakahira {
+    margin-top: 10px;
+}
+
+.footer-nakahira-ttl {
+    font-size: 1.4rem;
+}
+
+.footer-nakahira-address {
+    font-size: 1.2rem;
+}
+
+.footer-nakahira-address span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.gmap {
+height: 0;
+overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+}
+
+.gmap iframe {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+}
+
 @media screen and (max-width:1024px) {
     /* ファーストビュー */
     .first-view {
-        background: url(../img/Firstview-tablet.png) no-repeat;
+        background: url(./img/Firstview-tablet.png) no-repeat;
         background-size: cover;
         height: 60vh;
     }
@@ -709,7 +821,7 @@ span {
         width: 18px;
         height: 12px;
         content: "";
-        background: url(../img/tel-sp.png) no-repeat;
+        background: url(./img/tel-sp.png) no-repeat;
     }
     
     .header-info,
@@ -717,11 +829,10 @@ span {
     .header-tel-btn {
         display: none;
     }
-
     
     /* ファーストビュー */
     .first-view {
-        background: url(../img/Firstview-tablet.png) no-repeat;
+        background: url(./img/Firstview-tablet.png) no-repeat;
         background-size: cover;
         height: 60vh;
     }
@@ -830,7 +941,6 @@ span {
         padding: 0;
     }
     
-    
     /* 料金 */
     .fee-table {
         border-right-width: 0;
@@ -873,6 +983,8 @@ span {
         padding: 0 1rem;
     }
     
+    /* フッター */
+    
 }
 
 @media screen and (max-width : 480px) {
@@ -905,7 +1017,7 @@ span {
 
     /* ファーストビュー */
     .first-view {
-        background: url(../img/Firstview-mobile.png) no-repeat;
+        background: url(./img/Firstview-mobile.png) no-repeat;
         background-position: top;
         background-size: cover;
         height: 80vh;
@@ -989,7 +1101,44 @@ span {
     .greeting-txt {
         font-size: 1.6rem;
     }
-        
+    
+    /* フッター */
+    .footer-img {
+        text-align: center;
+        margin: 0 auto;
+    } 
+
+    .footer-pc {
+        display: none;
+    }
+
+    .footer-tenpakuhara {
+        background: none;
+        font-size: 1.8rem;
+        color: #333;
+        width: auto;
+        padding: 0;
+    }
+
+    .footer-left-address {
+        font-size: 1.4rem;
+    }
+
+    .footer-left-address span {
+        font-size: 1.2rem;
+    }
+
+    .footer-left-parking {
+        font-size: 1.4rem;
+    }
+
+    .footer-left-tel {
+        font-size: 2rem;
+    }
+
+    .footer-left-time {
+        font-size: 1.6rem;
+    }
 }
 
 
