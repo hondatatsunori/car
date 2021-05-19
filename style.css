@@ -653,8 +653,6 @@ span {
 
 .footer-inner {
     display: flex;
-    width: 1210px;
-    margin: 0 auto;
 }
 
 .footer-img {
@@ -746,7 +744,7 @@ span {
 .gmap {
     overflow: hidden;
     width: 100%;
-    justify-content: right;
+    margin-left: 10%;
 }
 
 .gmap iframe {
@@ -780,7 +778,16 @@ span {
         display: flex;
         align-items: center;
     }
+
+    /* フッター */
+    .footer-right {
+        display: none;
     }
+
+    .gmap {
+        margin-left: 5%;
+    }
+}
     
 
 @media screen and (max-width:768px) {
@@ -1001,7 +1008,10 @@ span {
     }
     
     /* フッター */
-
+    .gmap {
+        margin-top: 19%;
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width : 480px) {
@@ -1126,7 +1136,7 @@ span {
 
     .footer-inner {
         display: flex;
-        flex: wrap;
+        flex-wrap: wrap;
     }
 
     .footer-img,
@@ -1169,6 +1179,10 @@ span {
 
     .footer-left-time {
         font-size: 1.6rem;
+    }
+
+    .gmap {
+        margin-top: 5%;
     }
 }
 
