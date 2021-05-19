@@ -697,6 +697,10 @@ span {
     font-size: 1.2rem;
 }
 
+.footer-right {
+    margin-right: 10%;
+}
+
 .footer-hara-ttl {
     font-size: 1.6rem;
 }
@@ -732,18 +736,21 @@ span {
 }
 
 .gmap {
-height: 0;
 overflow: hidden;
-padding-bottom: 56.25%;
-position: relative;
 }
 
 .gmap iframe {
-position: absolute;
-left: 0;
-top: 0;
 height: 100%;
 width: 100%;
+}
+
+.footer small {
+    height: 30px;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width:1024px) {
@@ -984,7 +991,7 @@ width: 100%;
     }
     
     /* フッター */
-    
+
 }
 
 @media screen and (max-width : 480px) {
@@ -1103,6 +1110,10 @@ width: 100%;
     }
     
     /* フッター */
+    .footer-cotent {
+        display: block;
+    }
+
     .footer-img {
         text-align: center;
         margin: 0 auto;
