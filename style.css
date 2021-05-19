@@ -699,10 +699,12 @@ span {
 .footer-left {
     margin-right: 10%;
     font-size: 1.2rem;
+    white-space: nowrap;
 }
 
 .footer-right {
     margin-right: 10%;
+    white-space: nowrap;
 }
 
 .footer-hara-ttl {
@@ -741,6 +743,7 @@ span {
 
 .gmap {
     overflow: hidden;
+    width: 100%;
 }
 
 .gmap iframe {
