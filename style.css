@@ -653,6 +653,8 @@ span {
 
 .footer-inner {
     display: flex;
+    width: 1210px;
+    margin: 0 auto;
 }
 
 .footer-img {
@@ -744,6 +746,7 @@ span {
 .gmap {
     overflow: hidden;
     width: 100%;
+    justify-content: right;
 }
 
 .gmap iframe {
