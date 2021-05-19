@@ -1137,6 +1137,7 @@ span {
     .footer-inner {
         display: flex;
         flex-wrap: wrap;
+        padding: 10% 0;
     }
 
     .footer-img,
@@ -1183,6 +1184,7 @@ span {
 
     .gmap {
         margin-top: 5%;
+        height: 220px;
     }
 }
 
