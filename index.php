@@ -28,10 +28,10 @@
           </div>
         </div>
         <div class="common-btn_sp">
-          <a href="#">Web<br>お問い合わせ</a>
+          <a href="<?php echo get_template_directory_uri(); ?>/contact/">Web<br>お問い合わせ</a>
         </div>
       </div>
-      <a class="common-btn first-view-btn pc">ご相談はこちら</a>
+      <a href="<?php echo get_template_directory_uri(); ?>/contact/" class="common-btn first-view-btn pc">ご相談はこちら</a>
     </div>
   </div>
   <div class="news wrap">
@@ -214,7 +214,7 @@
       <h2 class="recommend-point"><span><i class="far fa-hand-point-right"></i>03</span>整備にかかるお金は立合診断で相談して決めるので、安心です！　相談時間は２０分程です。</h2>
     </div>
     <div class="fee-btn">
-      <a href="#" class="common-btn">✉ ご相談はこちらから</a>
+      <a href="<?php echo get_template_directory_uri(); ?>/contact/" class="common-btn">✉ ご相談はこちらから</a>
     </div>
   </section>
 </main>

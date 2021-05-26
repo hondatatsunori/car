@@ -1280,6 +1280,19 @@ span {
   display: block;
 }
 
+form.form {
+    margin: 60px auto;
+    width: 60%;
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+p {
+    margin-top: 10px;
+}
+
 /* 送信ボタンのデザイン変更 */
 #formbtn {
   display: block;
@@ -1301,7 +1314,11 @@ span {
 }
 
 textarea {
-  color:red !important;
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  form.form {
+    width: 90%;
+  }
 }

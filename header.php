@@ -31,6 +31,6 @@
         <p>お気軽にお問い合わせください</p>
         <p id="header-tel-number">052-805-4848</p>
       </div>
-      <a href="#" class="common-btn header-tel-btn">✉ ご相談はこちらから</a>
+      <a href="<?php echo get_template_directory_uri(); ?>/contact/" class="common-btn header-tel-btn">✉ ご相談はこちらから</a>
     </div>
   </header>
