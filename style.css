@@ -1302,5 +1302,6 @@ span {
 
 textarea {
   color:red !important;
-  width: 1000px;
+  width: 90%;
+  max-width: 1000px;
 }
