@@ -5,8 +5,6 @@ function twpp_enqueue_styles()
 }
 add_action('wp_enqueue_scripts', 'twpp_enqueue_styles');
 
-add_filter('show_admin_bar', '__return_false');
-
 function twpp_enqueue_scripts()
 {
   wp_enqueue_script(
